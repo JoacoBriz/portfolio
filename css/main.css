@@ -185,17 +185,29 @@ main {
         width: 60%;
         background-color: #040404;
         color: white;
-        border-radius: 9px;
+        border-style: solid;
+        border: 2pxs;
+        border-radius: 10px;
         border-color: white;
         margin-bottom: 80px; }
       main .contacto form .buttonEnviar {
         background-color: #BDBDBD;
+        border-color: #BDBDBD;
         color: #040404;
         font-size: 20px;
         width: 30%;
         padding-top: 15px;
         padding-bottom: 15px;
         border-radius: 5px; }
+      main .contacto form textarea:focus, main .contacto form input:focus, main .contacto form input[type]:focus {
+        border-style: solid;
+        border-color: #EE82EE;
+        box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(255, 144, 0, 0.6);
+        outline: 0 none; }
+      main .contacto form .buttonEnviar:focus {
+        background-color: #EE82EE;
+        box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(255, 144, 0, 0.6);
+        outline: 0 none; }
 
 footer {
   padding-top: 10%;
@@ -227,3 +239,7 @@ footer {
       border-radius: 50%;
       text-decoration: none;
       color: #040404; }
+    footer .buttonsContacto .buttonContacto:focus {
+      background-color: #EE82EE;
+      box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(255, 144, 0, 0.6);
+      outline: 0 none; }

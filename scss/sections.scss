@@ -234,19 +234,35 @@ main{
         width: 60%;
         background-color: $baseColor;
         color: white;
-        border-radius: 9px;
+        border-style: solid;
+        border: 2pxs;
+        border-radius: 10px;
         border-color: white;
         margin-bottom: 80px;
       }
 
       .buttonEnviar{
         background-color: #BDBDBD;
+        border-color: #BDBDBD;
         color: $baseColor;
         font-size: 20px;
         width: 30%;
         padding-top: 15px;
         padding-bottom: 15px;
         border-radius: 5px;
+      }
+
+      textarea:focus, input:focus, input[type]:focus {
+        border-style: solid;
+        border-color: $colorTerciario;
+        box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255,144,0,0.6);
+        outline: 0 none;
+    }
+
+      .buttonEnviar:focus{
+        background-color: $colorTerciario;
+        box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255,144,0,0.6);
+        outline: 0 none;
       }
     }
   }
@@ -285,6 +301,12 @@ footer{
       border-radius: 50%;
       text-decoration: none;
       color: $baseColor;
+    }
+
+    .buttonContacto:focus{
+      background-color: $colorTerciario;
+      box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255,144,0,0.6);
+      outline: 0 none;
     }
   }
 
