@@ -1,0 +1,229 @@
+body {
+  background-color: #040404; }
+
+header {
+  position: fixed;
+  width: 100%; }
+  header .navBar ul {
+    font-family: "Fira Code", monospace;
+    background-color: #6DCAD4;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+    header .navBar ul .nombre {
+      font-weight: 600;
+      font-size: 25px;
+      margin-left: 2%;
+      margin-right: 39%; }
+    header .navBar ul .section1 {
+      font-size: 25px;
+      margin-right: 10%; }
+      header .navBar ul .section1 a {
+        text-decoration: none;
+        color: #040404; }
+    header .navBar ul .section2 {
+      font-size: 25px;
+      margin-right: 10%; }
+      header .navBar ul .section2 a {
+        text-decoration: none;
+        color: #040404; }
+    header .navBar ul .section3 {
+      font-size: 25px;
+      margin-right: 5%; }
+      header .navBar ul .section3 a {
+        text-decoration: none;
+        color: #040404; }
+
+main {
+  background-color: #040404;
+  font-family: "Fira Code", monospace;
+  color: white; }
+  main .tituloPrincipal {
+    color: #6DCAD4;
+    font-size: 90px;
+    text-align: center;
+    width: 100%;
+    padding-top: 300px;
+    padding-bottom: 20px; }
+  main .tituloSecundario {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 300px; }
+  main .sobreMi {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%; }
+    main .sobreMi .datos {
+      width: 50%;
+      margin-right: 5%;
+      float: left;
+      margin-bottom: 100px; }
+      main .sobreMi .datos h2 {
+        color: #6DCAD4;
+        text-align: left;
+        font-size: 50px;
+        padding-bottom: 6%; }
+      main .sobreMi .datos p {
+        text-align: left;
+        font-size: 25px; }
+    main .sobreMi img {
+      float: right;
+      width: 350px;
+      height: 350px;
+      border-radius: 175px;
+      margin-bottom: 100px; }
+  main .fortalezas {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between; }
+    main .fortalezas .fortaleza {
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+      main .fortalezas .fortaleza .fortalezaIcono {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 0px; }
+      main .fortalezas .fortaleza .fortalezaPalabra {
+        text-align: center; }
+  main .habilidades {
+    margin-top: 100px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%; }
+    main .habilidades h2 {
+      color: #6DCAD4;
+      text-align: center;
+      font-size: 50px; }
+    main .habilidades ul {
+      padding-top: 50px;
+      padding-bottom: 100px;
+      list-style: none;
+      display: flex;
+      justify-content: space-between; }
+      main .habilidades ul .habilidad {
+        display: flex;
+        align-items: center;
+        flex-direction: column; }
+        main .habilidades ul .habilidad .habilidadIcono {
+          width: 150px;
+          height: 150px;
+          margin-bottom: 0px; }
+        main .habilidades ul .habilidad .habilidadNombre {
+          text-align: center; }
+  main .proyectos {
+    margin-top: 100px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%; }
+    main .proyectos h2 {
+      font-family: "Fira Code", monospace;
+      color: #6DCAD4;
+      text-align: center;
+      font-size: 50px; }
+    main .proyectos .listaProyectos {
+      padding-top: 50px;
+      padding-bottom: 100px;
+      list-style: none;
+      display: flex;
+      justify-content: space-around; }
+      main .proyectos .listaProyectos .proyecto {
+        display: flex;
+        align-items: center;
+        flex-direction: column; }
+        main .proyectos .listaProyectos .proyecto img {
+          border-radius: 10px;
+          width: 400px;
+          height: 400px;
+          margin-bottom: 0px; }
+  main .contacto {
+    margin-top: 100px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%; }
+    main .contacto h2 {
+      font-family: "Fira Code", monospace;
+      color: #6DCAD4;
+      text-align: center;
+      font-size: 50px;
+      margin-bottom: 40px; }
+    main .contacto h3 {
+      font-family: "Fira Code", monospace;
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 30px; }
+    main .contacto form {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .contacto form input {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        font-size: 15px;
+        width: 60%;
+        background-color: #040404;
+        color: white;
+        border-radius: 9px;
+        border-color: white;
+        margin-bottom: 40px; }
+      main .contacto form textarea {
+        margin-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        font-size: 15px;
+        width: 60%;
+        background-color: #040404;
+        color: white;
+        border-radius: 9px;
+        border-color: white;
+        margin-bottom: 80px; }
+      main .contacto form .buttonEnviar {
+        background-color: #BDBDBD;
+        color: #040404;
+        font-size: 20px;
+        width: 30%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 5px; }
+
+footer {
+  padding-top: 10%;
+  width: 100%;
+  background-color: #040404;
+  color: white;
+  font-family: "Fira Code", monospace;
+  padding-bottom: 20px; }
+  footer h3 {
+    text-align: center;
+    margin-bottom: 15px; }
+  footer .buttonsContacto {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    footer .buttonsContacto .buttonContacto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #6DCAD4;
+      font-size: 30px;
+      height: 80px;
+      width: 80px;
+      bottom: 20px;
+      left: 10px;
+      border-radius: 50%;
+      text-decoration: none;
+      color: #040404; }
