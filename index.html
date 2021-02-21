@@ -105,11 +105,11 @@
       <h2 id="contacto">Contáctame</h2>
       <h3>¡Completa tus datos para mantenernos en contacto!</h3>
 
-      <form action="joaquinbriz1@gmail.com">
-          <input type="text" name="Nombre" placeholder="Nombre">
-          <input type="email" id="email" placeholder="Correo electrónico">
-          <input type="text" name="asunto" placeholder="Asunto">
-          <textarea id="comentario" rows="10" placeholder="Mensaje"></textarea>
+      <form id="formulario" action="mailto:joaquinbriz1@gmail.com" method="post" enctype="text/plain">
+          <input id="grupo__nombre" type="text" name="nombre" placeholder="Nombre">
+          <input id="grupo__email" type="email" name="email" placeholder="Correo electrónico">
+          <input id="grupo__asunto" type="text" name="asunto" placeholder="Asunto">
+          <input id="grupo__mensaje" name="mensaje" rows="10" placeholder="Mensaje"></input>
 
           <button class="buttonEnviar btn btn-primary" type="submit">Enviar</button>
       </form>
@@ -122,7 +122,7 @@
       <a class="buttonContacto" href="https://www.linkedin.com/in/joaquin-brizuela/">
         <i class="fab fa-linkedin"></i>
       </a>
-      <a class="buttonContacto" href="https://mail.google.com/mail/u/0/#inbox">
+      <a class="buttonContacto" href="mailto:joaquinbriz1@gmail.com">
         <i class="fas fa-envelope"></i>
       </a>
     </section>
@@ -144,5 +144,12 @@
   <script src="https://kit.fontawesome.com/9ed8b2ceb1.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
   <script src="js/typed.js"></script>
+
+  <!-- Alert -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
+  <!-- Index JS -->
+  <script src="js/index.js"></script>
 </body>
 </html>

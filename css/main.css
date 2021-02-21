@@ -175,7 +175,8 @@ main {
         color: white;
         border-radius: 9px;
         border-color: white;
-        margin-bottom: 40px; }
+        margin-bottom: 40px;
+        transition: 1s; }
       main .contacto form textarea {
         margin-bottom: 20px;
         padding-top: 20px;
@@ -189,7 +190,8 @@ main {
         border: 2pxs;
         border-radius: 10px;
         border-color: white;
-        margin-bottom: 80px; }
+        margin-bottom: 80px;
+        transition: 1s; }
       main .contacto form .buttonEnviar {
         background-color: #BDBDBD;
         border-color: #BDBDBD;
@@ -203,6 +205,9 @@ main {
         border-style: solid;
         border-color: #EE82EE;
         box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(255, 144, 0, 0.6);
+        width: 65%;
+        padding-top: 25px;
+        padding-bottom: 25px;
         outline: 0 none; }
       main .contacto form .buttonEnviar:focus {
         background-color: #EE82EE;
@@ -243,3 +248,37 @@ footer {
       background-color: #EE82EE;
       box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(255, 144, 0, 0.6);
       outline: 0 none; }
+
+.formularioGrupoIncorrecto {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  font-size: 15px;
+  width: 60%;
+  background-color: #040404;
+  color: white;
+  border-radius: 9px;
+  border-color: white;
+  margin-bottom: 40px;
+  transition: 1s; }
+
+.formularioGrupoIncorrecto:focus {
+  border-style: solid;
+  border-color: red;
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(255, 144, 0, 0.6);
+  width: 65%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  outline: 0 none; }
+
+.alertButtonEnviar .alertTexto {
+  padding-left: 10%;
+  padding-right: 10%;
+  color: black;
+  font-family: "Fira Code", monospace; }
+
+.alertButtonEnviar .buttonVolver {
+  background-color: black;
+  font-family: "Fira Code", monospace;
+  padding-left: 40px;
+  padding-right: 40px; }

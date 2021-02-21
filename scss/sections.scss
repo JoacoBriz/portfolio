@@ -2,7 +2,6 @@ body{
   background-color: $baseColor;
 }
 
-
 //HEADER
 
 header{
@@ -224,6 +223,7 @@ main{
         border-radius: 9px;
         border-color: white;
         margin-bottom: 40px;
+        transition: 1s;
       }
       textarea{
         margin-bottom: 20px;
@@ -239,6 +239,7 @@ main{
         border-radius: 10px;
         border-color: white;
         margin-bottom: 80px;
+        transition: 1s;
       }
 
       .buttonEnviar{
@@ -256,6 +257,9 @@ main{
         border-style: solid;
         border-color: $colorTerciario;
         box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255,144,0,0.6);
+        width: 65%;
+        padding-top: 25px;
+        padding-bottom: 25px;
         outline: 0 none;
     }
 
@@ -309,5 +313,44 @@ footer{
       outline: 0 none;
     }
   }
+}
 
+.formularioGrupoIncorrecto{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  font-size: 15px;
+  width: 60%;
+  background-color: $baseColor;
+  color: white;
+  border-radius: 9px;
+  border-color: white;
+  margin-bottom: 40px;
+  transition: 1s;
+}
+
+.formularioGrupoIncorrecto:focus{
+  border-style: solid;
+  border-color: red;
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255,144,0,0.6);
+  width: 65%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  outline: 0 none;
+}
+
+.alertButtonEnviar{
+  .alertTexto{
+    padding-left: 10%;
+    padding-right: 10%;
+    color: black;
+    font-family: $fuentePrincipal;
+  }
+  
+  .buttonVolver{
+    background-color: black;
+    font-family: $fuentePrincipal;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
