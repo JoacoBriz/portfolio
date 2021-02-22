@@ -1,0 +1,90 @@
+//Proyecto E-commerce Libros
+main {
+  padding-top: 100px;
+  .logoProyecto{
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    background-color: $colorSecundario;
+    color: black;
+    margin-left: 46%;
+    margin-right: 46%;
+    width: 8%;
+    padding: 20px 0px 20px 0px;
+    border-radius: 30px;
+  }
+  background-color: $baseColor;
+  font-family: $fuentePrincipal;
+  .tituloProyecto{
+    color: $colorSecundario;
+    font-size: 90px;
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+    margin-bottom: 20px;
+  }
+  .subtituloProyecto{
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .descripcionProyecto{
+    text-align: left;
+    font-size: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+    margin-bottom: 30px;
+  }
+  .sitioWeb{
+    background-color: $colorTerciario;
+    border-color: $colorTerciario;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255,144,0,0.6);
+    color: $baseColor;
+
+    font-size: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    margin-bottom: 80px;
+    a{
+      color: $baseColor;
+      text-decoration: none;
+    }
+  }
+
+  .sitioWeb:hover{
+    background-color: $colorTerciario;
+    outline: 0 none;
+    text-decoration: none;
+  }
+
+  .informacion{
+    div{
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      h2{
+        text-align: center;
+        font-size: 60px;
+        margin-bottom: 30px;
+      }
+      div{
+        width: 20%;
+        display: flex;
+        justify-content: space-evenly;
+        i{
+          color: $colorSecundario;
+          font-size: 60px;
+          margin-bottom: 50px;
+        }
+      }
+
+    }
+  }
+}
