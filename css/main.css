@@ -70,9 +70,6 @@ main {
         font-size: 60px;
         margin-bottom: 50px; }
 
-body {
-  background-color: #040404; }
-
 header {
   position: fixed;
   width: 100%; }
@@ -107,6 +104,8 @@ header {
       header .navBar ul .section3 a {
         text-decoration: none;
         color: #040404; }
+  header .navBarMobile {
+    display: none; }
 
 main {
   padding-top: 275px;
@@ -127,9 +126,9 @@ main {
   main .sobreMi {
     padding-top: 150px;
     display: block;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%; }
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%; }
     main .sobreMi .datos {
       width: 50%;
       margin-right: 5%;
@@ -143,6 +142,8 @@ main {
       main .sobreMi .datos p {
         text-align: left;
         font-size: 25px; }
+    main .sobreMi .datosMobile {
+      display: none; }
     main .sobreMi img {
       float: right;
       width: 350px;
@@ -152,9 +153,9 @@ main {
   main .fortalezas {
     padding-top: 100px;
     padding-bottom: 100px;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     list-style: none;
     display: flex;
     justify-content: space-between; }
@@ -298,9 +299,9 @@ footer {
     text-align: center;
     margin-bottom: 15px; }
   footer .buttonsContacto {
-    width: 20%;
-    margin-left: 40%;
-    margin-right: 40%;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
     display: flex;
     justify-content: space-evenly;
     align-items: center; }
@@ -322,28 +323,6 @@ footer {
       box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(255, 144, 0, 0.6);
       outline: 0 none; }
 
-.formularioGrupoIncorrecto {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  font-size: 15px;
-  width: 60%;
-  background-color: #040404;
-  color: white;
-  border-radius: 9px;
-  border-color: white;
-  margin-bottom: 40px;
-  transition: 1s; }
-
-.formularioGrupoIncorrecto:focus {
-  border-style: solid;
-  border-color: red;
-  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(255, 144, 0, 0.6);
-  width: 65%;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  outline: 0 none; }
-
 .alertButtonEnviar .alertTexto {
   padding-left: 10%;
   padding-right: 10%;
@@ -360,3 +339,366 @@ footer {
   font-size: 100px;
   width: 100%;
   text-align: center; }
+
+/*Mobile Styles*/
+@media only screen and (max-width: 425px) {
+  .flecha {
+    font-size: 60px;
+    width: 100%; }
+  header {
+    position: fixed;
+    width: 100%;
+    background-color: #6DCAD4; }
+    header .navBar {
+      display: none; }
+  main {
+    width: 100%;
+    color: white;
+    padding-top: 275px; }
+    main .tituloPrincipal {
+      width: 100%;
+      font-size: 50px; }
+    main .tituloSecundario {
+      width: 100%;
+      font-size: 20px;
+      padding-bottom: 100px; }
+    main .sobreMi {
+      padding-top: 150px;
+      display: block;
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 15%; }
+      main .sobreMi .datos {
+        display: none; }
+      main .sobreMi .miFoto {
+        display: none; }
+      main .sobreMi .datosMobile {
+        width: 100%;
+        display: block; }
+        main .sobreMi .datosMobile .miFotoMobile {
+          float: none;
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+          margin-bottom: 100px; }
+        main .sobreMi .datosMobile h2 {
+          display: block;
+          float: none;
+          color: #6DCAD4;
+          font-size: 30px;
+          margin-bottom: 15px; }
+        main .sobreMi .datosMobile .textoMobile {
+          float: none;
+          display: block; }
+    main .fortalezas {
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 60px;
+      margin-left: 0px;
+      padding-left: 0px; }
+      main .fortalezas .fortaleza {
+        margin-left: 0px; }
+        main .fortalezas .fortaleza .fortalezaIcono {
+          width: 100%;
+          height: 85%; }
+        main .fortalezas .fortaleza .fortalezaPalabra {
+          font-size: 0.7rem; }
+    main .habilidades h2 {
+      width: 100%;
+      font-size: 30px; }
+    main .habilidades ul {
+      width: 100%;
+      padding-left: 0px;
+      padding-bottom: 0px;
+      margin-bottom: 80px; }
+      main .habilidades ul .habilidad .habilidadIcono {
+        width: 100%;
+        height: 85%; }
+      main .habilidades ul .habilidad .habilidadNombre {
+        font-size: 12px; }
+    main .proyectos {
+      margin-top: 80px;
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%; }
+      main .proyectos h2 {
+        width: 100%;
+        font-size: 30px; }
+      main .proyectos .listaProyectos {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 0px;
+        list-style: none;
+        display: block; }
+        main .proyectos .listaProyectos .proyecto img {
+          display: block;
+          border-radius: 10px;
+          width: 100%;
+          height: 100%;
+          margin-bottom: 50px; }
+    main .contacto h2 {
+      width: 100%;
+      font-size: 30px; }
+    main .contacto h3 {
+      width: 100%;
+      font-size: 15px;
+      margin-bottom: 35px; }
+    main .contacto form input {
+      width: 95%; }
+    main .contacto form textarea {
+      width: 95%; }
+    main .contacto form .buttonEnviar {
+      font-size: 18px;
+      width: 60%; }
+  footer {
+    padding-top: 30%;
+    width: 100%;
+    background-color: #040404;
+    color: white;
+    font-family: "Fira Code", monospace;
+    padding-bottom: 20px; }
+    footer h3 {
+      text-align: center;
+      margin-bottom: 15px; }
+    footer .buttonsContacto {
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
+      footer .buttonsContacto .buttonContacto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #6DCAD4;
+        font-size: 25px;
+        height: 60px;
+        width: 60px;
+        bottom: 20px;
+        left: 10px;
+        border-radius: 50%;
+        text-decoration: none;
+        color: #040404; } }
+
+/*Tablet Styles*/
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .flecha {
+    font-size: 70px;
+    width: 96%; }
+  header {
+    position: fixed;
+    width: 100%; }
+    header .navBar ul .nombre {
+      font-size: 20px;
+      margin-right: 15%; }
+    header .navBar ul .section1 {
+      font-size: 20px;
+      margin-right: 5%; }
+    header .navBar ul .section2 {
+      font-size: 20px;
+      margin-right: 5%; }
+    header .navBar ul .section3 {
+      font-size: 20px;
+      margin-right: 5%; }
+  main {
+    padding-top: 275px; }
+    main .tituloPrincipal {
+      font-size: 60px; }
+    main .tituloSecundario {
+      font-size: 30px;
+      padding-bottom: 100px; }
+    main .sobreMi {
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%; }
+      main .sobreMi .datos {
+        margin-bottom: 0px; }
+        main .sobreMi .datos h2 {
+          font-size: 40px; }
+        main .sobreMi .datos p {
+          font-size: 18px; }
+      main .sobreMi img {
+        width: 250px;
+        height: 250px;
+        border-radius: 125px;
+        margin-top: 30px; }
+    main .fortalezas {
+      padding-top: 20px;
+      padding-bottom: 60px;
+      padding-left: 0px; }
+      main .fortalezas .fortaleza .fortalezaIcono {
+        width: 125px;
+        height: 125px; }
+      main .fortalezas .fortaleza .fortalezaPalabra {
+        font-size: 25px; }
+    main .habilidades h2 {
+      font-size: 40px; }
+    main .habilidades ul {
+      padding-left: 0px; }
+      main .habilidades ul .habilidad .habilidadIcono {
+        width: 125px;
+        height: 125px; }
+      main .habilidades ul .habilidad .habilidadNombre {
+        font-size: 25px; }
+    main .proyectos h2 {
+      font-size: 50px; }
+    main .proyectos .listaProyectos {
+      margin-bottom: 0px;
+      padding-left: 0px;
+      justify-content: space-between; }
+      main .proyectos .listaProyectos .proyecto img {
+        width: 250px;
+        height: 250px; }
+    main .contacto h2 {
+      font-size: 50px;
+      margin-bottom: 25px; }
+    main .contacto h3 {
+      font-size: 20px;
+      margin-bottom: 35px; }
+    main .contacto form input {
+      width: 95%; }
+    main .contacto form textarea {
+      width: 95%; } }
+
+/*Laptop Styles*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .flecha {
+    font-size: 80px;
+    width: 100%;
+    text-align: center; }
+  header {
+    position: fixed;
+    width: 100%; }
+    header .navBar ul .nombre {
+      font-size: 20px;
+      margin-right: 20%; }
+    header .navBar ul .section1 {
+      font-size: 20px;
+      margin-right: 5%; }
+    header .navBar ul .section2 {
+      font-size: 20px;
+      margin-right: 5%; }
+    header .navBar ul .section3 {
+      font-size: 20px;
+      margin-right: 5%; }
+  main {
+    padding-top: 275px; }
+    main .tituloPrincipal {
+      font-size: 70px; }
+    main .tituloSecundario {
+      font-size: 30px; }
+    main .sobreMi .datos h2 {
+      font-size: 50px; }
+    main .sobreMi .datos p {
+      font-size: 20px; }
+    main .sobreMi img {
+      width: 300px;
+      height: 300px;
+      border-radius: 150px; }
+    main .fortalezas {
+      padding-left: 0px; }
+      main .fortalezas .fortaleza .fortalezaIcono {
+        width: 125px;
+        height: 125px; }
+      main .fortalezas .fortaleza .fortalezaPalabra {
+        font-size: 25px; }
+    main .habilidades h2 {
+      font-size: 40px; }
+    main .habilidades ul {
+      padding-left: 0px; }
+      main .habilidades ul .habilidad .habilidadIcono {
+        width: 125px;
+        height: 125px; }
+      main .habilidades ul .habilidad .habilidadNombre {
+        font-size: 25px; }
+    main .proyectos h2 {
+      font-size: 50px; }
+    main .proyectos .listaProyectos {
+      margin-bottom: 0px;
+      padding-left: 0px; }
+      main .proyectos .listaProyectos .proyecto img {
+        width: 300px;
+        height: 300px; }
+    main .contacto h2 {
+      font-size: 50px;
+      margin-bottom: 25px; }
+    main .contacto h3 {
+      font-size: 25px;
+      margin-bottom: 35px; }
+    main .contacto form input {
+      width: 80%; }
+    main .contacto form textarea {
+      width: 80%; } }
+
+/*Laptop L Styles*/
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .flecha {
+    font-size: 80px;
+    width: 100%;
+    text-align: center; }
+  header {
+    position: fixed;
+    width: 100%; }
+    header .navBar ul .nombre {
+      font-size: 20px;
+      margin-right: 20%; }
+    header .navBar ul .section1 {
+      font-size: 20px;
+      margin-right: 5%; }
+    header .navBar ul .section2 {
+      font-size: 20px;
+      margin-right: 5%; }
+    header .navBar ul .section3 {
+      font-size: 20px;
+      margin-right: 5%; }
+  main {
+    padding-top: 275px; }
+    main .tituloPrincipal {
+      font-size: 70px; }
+    main .tituloSecundario {
+      font-size: 30px; }
+    main .sobreMi .datos h2 {
+      font-size: 50px; }
+    main .sobreMi .datos p {
+      font-size: 20px; }
+    main .sobreMi img {
+      width: 300px;
+      height: 300px;
+      border-radius: 150px; }
+    main .fortalezas {
+      justify-content: space-between;
+      padding-left: 0px; }
+      main .fortalezas .fortaleza .fortalezaIcono {
+        width: 125px;
+        height: 125px; }
+      main .fortalezas .fortaleza .fortalezaPalabra {
+        font-size: 25px; }
+    main .habilidades h2 {
+      font-size: 40px; }
+    main .habilidades ul {
+      padding-left: 0px; }
+      main .habilidades ul .habilidad .habilidadIcono {
+        width: 125px;
+        height: 125px; }
+      main .habilidades ul .habilidad .habilidadNombre {
+        font-size: 25px; }
+    main .proyectos h2 {
+      font-size: 50px; }
+    main .proyectos .listaProyectos {
+      margin-bottom: 0px;
+      padding-left: 0px; }
+      main .proyectos .listaProyectos .proyecto img {
+        width: 350px;
+        height: 350px; }
+    main .contacto h2 {
+      font-size: 50px;
+      margin-bottom: 25px; }
+    main .contacto h3 {
+      font-size: 25px;
+      margin-bottom: 35px; }
+    main .contacto form input {
+      width: 65%; }
+    main .contacto form textarea {
+      width: 65%; } }

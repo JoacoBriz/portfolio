@@ -1,7 +1,3 @@
-body{
-  background-color: $baseColor;
-}
-
 //HEADER
 
 header{
@@ -48,6 +44,9 @@ header{
       }
     }
   }
+  .navBarMobile{
+    display: none;
+  }
 }
 
 
@@ -75,9 +74,9 @@ main{
   .sobreMi{
     padding-top: 150px;
     display: block;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
     .datos{
       width: 50%;
       margin-right: 5%;
@@ -94,7 +93,9 @@ main{
       }
       margin-bottom: 100px;
     }
-
+    .datosMobile{
+      display: none;
+    }
     img{
       float: right;
       width:350px;
@@ -107,9 +108,9 @@ main{
   .fortalezas{
     padding-top: 100px;
     padding-bottom: 100px;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -286,9 +287,9 @@ footer{
     margin-bottom: 15px;
   }
   .buttonsContacto{
-    width: 20%;
-    margin-left: 40%;
-    margin-right: 40%;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -314,30 +315,6 @@ footer{
       outline: 0 none;
     }
   }
-}
-
-.formularioGrupoIncorrecto{
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  font-size: 15px;
-  width: 60%;
-  background-color: $baseColor;
-  color: white;
-  border-radius: 9px;
-  border-color: white;
-  margin-bottom: 40px;
-  transition: 1s;
-}
-
-.formularioGrupoIncorrecto:focus{
-  border-style: solid;
-  border-color: red;
-  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255,144,0,0.6);
-  width: 65%;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  outline: 0 none;
 }
 
 .alertButtonEnviar{
