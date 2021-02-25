@@ -1,4 +1,5 @@
-/*Mobile Styles*/
+/* INDEX */
+/* Mobile Styles */
 @media only screen and (max-width: 425px){
   .flecha{
     font-size: 60px;
@@ -8,17 +9,178 @@
     position: fixed;
     width: 100%;
     background-color: $colorSecundario;
+    height: 60px;
     .navBar{
       display: none;
+    }
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700');
+
+    /* Configuration Parameters */
+    $lineWidth: 2px;
+    $lineLength: 24px;
+    $baseMargin: 6px;
+    $animationDuration: .2s;
+    
+
+    .nombreMobile{
+      position: absolute;
+      display: block;
+      color: black;
+      font-family: $fuentePrincipal;
+      font-weight: 600;
+      top: 18px;
+      left: 5px;
+      margin-left: 26%;
+      font-size: 21px;
+    }
+    #hamburger {
+      display: none;
+    }
+    
+    .menu {
+      display: block;
+      background-color: #6DCAD4;
+      width: 0px;
+      height: 841px;
+      overflow: hidden;
+      padding-top: 50px;
+      -webkit-transition-duration: $animationDuration;
+      -moz-transition-duration: $animationDuration;
+      -ms-transition-duration: $animationDuration;
+      -o-transition-duration: $animationDuration;
+      transition-duration: $animationDuration;
+      -webkit-transition-delay: $animationDuration;
+      -moz-transition-delay: $animationDuration;
+      -ms-transition-delay: $animationDuration;
+      -o-transition-delay: $animationDuration;
+      transition-delay: $animationDuration;
+      ul {
+        list-style: none;
+        padding-left: 30px;
+        padding-top: 25px;
+        .sobreMiMobile{
+          text-align: left;
+          font-size: 15pt;
+          margin-left: 3px;
+          a{
+            padding-left: 21px;
+          }
+        }
+        .contactoMobile{
+          text-align: left;
+          font-size: 15pt;
+          margin-left: 2px;
+        }
+        li {
+          text-align: left;
+          font-size: 15pt;
+
+          padding: 12px 0;
+          a {
+            padding-left: 20px;
+            font-size: 15px;
+            text-decoration: none;
+            color: black;
+            font-family: $fuentePrincipal;
+          }
+        }
+      }
+    }
+    
+    .menuicon {
+      position: absolute;
+      width: 20%;
+      top: 21px;
+      left: 45px;
+      display: block;
+      cursor: pointer;
+      height: $baseMargin*2 + $lineWidth;
+      width: $lineLength;
+      span {
+        display: block;
+        top: 7px;
+        width: $lineLength;
+        height: $lineWidth;
+        background-color: #000;
+        position: relative;
+        -webkit-transition-duration: 0;
+        -moz-transition-duration: 0;
+        -ms-transition-duration: 0;
+        -o-transition-duration: 0;
+        transition-duration: 0;  
+        -webkit-transition-delay: $animationDuration;
+        -moz-transition-delay: $animationDuration;
+        -ms-transition-delay: $animationDuration;
+        -o-transition-delay: $animationDuration;
+        transition-delay: $animationDuration;
+        &::after, &::before {
+          display: block;
+          content: '';
+          position: absolute;
+          width: $lineLength;
+          height: $lineWidth;
+          background-color: black;
+          -webkit-transition-duration: $animationDuration;
+          -moz-transition-duration: $animationDuration;
+          -ms-transition-duration: $animationDuration;
+          -o-transition-duration: $animationDuration;
+          transition-duration: $animationDuration;
+          -webkit-transition-delay: $animationDuration, 0;
+          -moz-transition-delay: $animationDuration, 0;
+          -ms-transition-delay: $animationDuration, 0;
+          -o-transition-delay: $animationDuration, 0;
+          transition-delay: $animationDuration, 0;
+        }
+        &::before {
+          background-color: black;
+          margin-top: -$baseMargin;
+        }
+        &::after {
+          margin-top: $baseMargin;
+        }
+      }
+    }
+    
+    #hamburger:checked ~ .menu {
+      width: 75%;
+    }
+    
+    #hamburger:checked ~ .menuicon {
+      span {
+        background-color: rgba(0,0,0,0);
+        &::before, &::after {
+          margin-top: 0px;
+          -webkit-transition-delay: 0, $animationDuration;
+          -moz-transition-delay: 0, $animationDuration;
+          -ms-transition-delay: 0, $animationDuration;
+          -o-transition-delay: 0, $animationDuration;
+          transition-delay: 0, $animationDuration;
+        }
+        &::before {
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+        &::after {
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+        }
+      }
     }
   }
   main{
     width: 100%;
     color: white;
-    padding-top: 275px;
+    padding-top: 240px;
     .tituloPrincipal{
+      padding-top: 100px;
       width: 100%;
-      font-size: 50px;
+      font-size: 40px;
     }
     .tituloSecundario{
       width: 100%;
@@ -53,7 +215,7 @@
           display: block;
           float: none;
           color: $colorSecundario;
-          font-size: 30px;
+          font-size: 35px;
           margin-bottom: 15px;
         }
         .textoMobile{
@@ -85,7 +247,7 @@
     .habilidades{
       h2{
         width: 100%;
-        font-size: 30px;
+        font-size: 35px;
       }
       ul{
         width: 100%;
@@ -111,7 +273,7 @@
       margin-right: 10%;
       h2{
         width: 100%;
-        font-size: 30px;
+        font-size: 35px;
       }
       .listaProyectos{
         padding-top: 50px;
@@ -134,7 +296,7 @@
     .contacto{
       h2{
         width: 100%;
-        font-size: 30px;
+        font-size: 35px;
       }
       h3{
         width: 100%;
@@ -193,7 +355,7 @@
   }
 }
 
-/*Tablet Styles*/ 
+/* Tablet Styles */ 
 @media only screen and (min-width: 426px) and (max-width: 768px){
   .flecha{
     font-size: 70px;
@@ -326,7 +488,7 @@
   }
 }
 
-/*Laptop Styles*/ 
+/* Laptop Styles */ 
 @media only screen and (min-width: 769px) and (max-width: 1024px){
   .flecha{
     font-size: 80px;
@@ -451,7 +613,7 @@
   }
 }
 
-/*Laptop L Styles*/
+/* Laptop L Styles */
 @media only screen and (min-width: 1025px) and (max-width: 1440px){
   .flecha{
     font-size: 80px;
@@ -576,3 +738,284 @@
     }
   }
 }
+
+/* PROYECTOS */
+/* Mobile Styles */
+@media only screen and (max-width: 425px){
+  .flechaProyectos{
+    font-size: 60px;
+    width: 100%;
+  }
+  header{
+    position: fixed;
+    width: 100%;
+    .navBarProyectos{
+      ul{
+        margin-top: 10px;
+        .nombreProyectos{
+          font-size: 18px;
+          margin-right: 5%;
+          margin-left: 0px;
+        }
+        .section1Proyectos{
+          font-size: 18px;
+          margin-right: 8%;
+        }
+      }
+    }
+  }
+  main {
+    padding-top: 150px;
+    .logoProyecto{
+      font-size: 65px;
+      padding: 15px 0px 15px 0px;
+      border-radius: 20px;
+      margin-left: 38%;
+      margin-right: 38%;
+      width: 24%;
+    }
+    .tituloProyecto{
+      font-size: 60px;
+    }
+    .subtituloProyecto{
+      font-size: 25px;
+    }
+    .descripcionProyecto{
+      font-size: 15px;
+      margin-left: 20%;
+      margin-right: 20%;
+      width: 60%;
+    }
+    .sitioWeb{
+      font-size: 15px;
+      width: 200px;
+    }
+
+    .informacion{
+      div{
+        h2{
+          font-size: 30px;
+        }
+        div{
+          width: 60%;
+          i{
+            font-size: 35px;
+          }
+        }
+
+      }
+    }
+  }
+  footer{  
+    padding-top: 30%;
+    width: 100%;
+    background-color: $baseColor;
+    color: white;
+    font-family: $fuentePrincipal;
+    padding-bottom: 20px;
+    h3{
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .buttonsContacto{
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  
+      .buttonContacto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $colorSecundario;
+        font-size: 25px;
+        height: 60px;
+        width: 60px;
+        bottom: 20px;
+        left: 10px;
+        border-radius: 50%;
+        text-decoration: none;
+        color: $baseColor;
+      }
+    }
+  }
+}
+
+/* Tablet Styles */ 
+@media only screen and (min-width: 426px) and (max-width: 768px){
+  .flechaProyectos{
+    font-size: 70px;
+    width: 96%;
+  }
+  main {
+    padding-top: 150px;
+    .logoProyecto{
+      font-size: 60px;
+      padding: 15px 0px 15px 0px;
+      border-radius: 20px;
+      margin-left: 45%;
+      margin-right: 45%;
+      width: 10%;
+    }
+    .tituloProyecto{
+      font-size: 60px;
+    }
+    .subtituloProyecto{
+      font-size: 25px;
+    }
+    .descripcionProyecto{
+      font-size: 15px;
+    }
+    .sitioWeb{
+      font-size: 15px;
+      width: 200px;
+    }
+
+    .informacion{
+      div{
+        h2{
+          font-size: 35px;
+        }
+        div{
+          width: 40%;
+          i{
+            font-size: 45px;
+          }
+        }
+
+      }
+    }
+  }
+  footer{  
+    padding-top: 30%;
+    width: 100%;
+    background-color: $baseColor;
+    color: white;
+    font-family: $fuentePrincipal;
+    padding-bottom: 20px;
+    h3{
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .buttonsContacto{
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  
+      .buttonContacto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $colorSecundario;
+        font-size: 25px;
+        height: 60px;
+        width: 60px;
+        bottom: 20px;
+        left: 10px;
+        border-radius: 50%;
+        text-decoration: none;
+        color: $baseColor;
+      }
+    }
+  }
+}
+
+/* Laptop Styles */ 
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+  .flechaProyectos{
+    font-size: 80px;
+    width: 100%;
+    text-align: center;
+  }
+  main {
+    padding-top: 150px;
+    .logoProyecto{
+      font-size: 60px;
+      padding: 15px 0px 15px 0px;
+    }
+    .tituloProyecto{
+      font-size: 70px;
+    }
+    .subtituloProyecto{
+      font-size: 30px;
+    }
+    .descripcionProyecto{
+      font-size: 15px;
+    }
+    .sitioWeb{
+      font-size: 18px;
+      width: 220px;
+    }
+
+    .informacion{
+      div{
+        h2{
+          font-size: 35px;
+        }
+        div{
+          width: 30%;
+          i{
+            font-size: 45px;
+          }
+        }
+
+      }
+    }
+  }
+  footer{
+    padding-top: 5%;
+  }
+}
+
+/* Laptop L Styles */
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
+  .flechaProyectos{
+    font-size: 80px;
+    width: 100%;
+    text-align: center;
+  }
+  main {
+    padding-top: 150px;
+    .logoProyecto{
+      font-size: 90px;
+      padding: 15px 0px 15px 0px;
+    }
+    .tituloProyecto{
+      font-size: 80px;
+    }
+    .subtituloProyecto{
+      font-size: 40px;
+    }
+    .descripcionProyecto{
+      text-align: center;
+      font-size: 20px;
+    }
+    .sitioWeb{
+      font-size: 18px;
+    }
+
+    .informacion{
+      div{
+        h2{
+          font-size: 45px;
+        }
+        div{
+          width: 30%;
+          i{
+            font-size: 50px;
+          }
+        }
+
+      }
+    }
+  }
+  footer{
+    padding-top: 5%;
+  }
+}
+

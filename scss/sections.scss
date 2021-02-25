@@ -1,5 +1,16 @@
-//HEADER
+body::-webkit-scrollbar{
+  width: 12px;
+  background: $baseColor;
+}
+body::-webkit-scrollbar-thumb{
+  background: $colorSecundario;
+  border-radius: 10px;
+  border: 3px solid $baseColor;
+}
 
+
+
+//HEADER
 header{
   position: fixed;
   width: 100%;
@@ -44,7 +55,16 @@ header{
       }
     }
   }
-  .navBarMobile{
+  #hamburger{
+    display: none;
+  }
+  .menuicon{
+    display: none;
+  }
+  .menu{
+    display: none;
+  }
+  .nombreMobile{
     display: none;
   }
 }
@@ -248,8 +268,9 @@ main{
         background-color: #BDBDBD;
         border-color: #BDBDBD;
         color: $baseColor;
-        font-size: 20px;
-        width: 30%;
+        font-weight: 600;
+        font-size: 25px;
+        width: 20%;
         padding-top: 15px;
         padding-bottom: 15px;
         border-radius: 5px;
@@ -321,7 +342,7 @@ footer{
   .alertTexto{
     padding-left: 10%;
     padding-right: 10%;
-    color: black;
+    color: $baseColor;
     font-family: $fuentePrincipal;
   }
   

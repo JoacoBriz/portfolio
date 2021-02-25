@@ -1,5 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700");
+.flechaProyectos {
+  font-size: 100px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px; }
+
+header {
+  position: fixed;
+  width: 100%; }
+  header .navBarProyectos ul {
+    font-family: "Fira Code", monospace;
+    background-color: #6DCAD4;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+    header .navBarProyectos ul .nombreProyectos {
+      font-weight: 600;
+      font-size: 25px;
+      margin-left: 2%;
+      margin-right: 39%; }
+    header .navBarProyectos ul .section1Proyectos {
+      font-size: 25px;
+      margin-right: 10%; }
+      header .navBarProyectos ul .section1Proyectos a {
+        text-decoration: none;
+        color: #040404; }
+
 main {
-  padding-top: 100px;
   background-color: #040404;
   font-family: "Fira Code", monospace; }
   main .logoProyecto {
@@ -7,7 +36,7 @@ main {
     display: block;
     text-align: center;
     background-color: #6DCAD4;
-    color: black;
+    color: #040404;
     margin-left: 46%;
     margin-right: 46%;
     width: 8%;
@@ -22,21 +51,22 @@ main {
     margin-bottom: 20px; }
   main .subtituloProyecto {
     width: 100%;
-    font-size: 50px;
+    font-size: 45px;
     text-align: center;
     margin-bottom: 30px; }
   main .descripcionProyecto {
-    text-align: left;
+    text-align: center;
     font-size: 20px;
     margin-left: 30%;
     margin-right: 30%;
     width: 40%;
-    margin-bottom: 30px; }
+    margin-bottom: 40px; }
   main .sitioWeb {
     background-color: #EE82EE;
     border-color: #EE82EE;
     box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(255, 144, 0, 0.6);
     color: #040404;
+    font-weight: 600;
     font-size: 20px;
     display: block;
     margin-left: auto;
@@ -59,8 +89,8 @@ main {
     margin-right: auto; }
     main .informacion div h2 {
       text-align: center;
-      font-size: 60px;
-      margin-bottom: 30px; }
+      font-size: 45px;
+      margin-bottom: 40px; }
     main .informacion div div {
       width: 20%;
       display: flex;
@@ -69,6 +99,15 @@ main {
         color: #6DCAD4;
         font-size: 60px;
         margin-bottom: 50px; }
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background: #040404; }
+
+body::-webkit-scrollbar-thumb {
+  background: #6DCAD4;
+  border-radius: 10px;
+  border: 3px solid #040404; }
 
 header {
   position: fixed;
@@ -104,7 +143,13 @@ header {
       header .navBar ul .section3 a {
         text-decoration: none;
         color: #040404; }
-  header .navBarMobile {
+  header #hamburger {
+    display: none; }
+  header .menuicon {
+    display: none; }
+  header .menu {
+    display: none; }
+  header .nombreMobile {
     display: none; }
 
 main {
@@ -270,8 +315,9 @@ main {
         background-color: #BDBDBD;
         border-color: #BDBDBD;
         color: #040404;
-        font-size: 20px;
-        width: 30%;
+        font-weight: 600;
+        font-size: 25px;
+        width: 20%;
         padding-top: 15px;
         padding-bottom: 15px;
         border-radius: 5px; }
@@ -326,7 +372,7 @@ footer {
 .alertButtonEnviar .alertTexto {
   padding-left: 10%;
   padding-right: 10%;
-  color: black;
+  color: #040404;
   font-family: "Fira Code", monospace; }
 
 .alertButtonEnviar .buttonVolver {
@@ -340,7 +386,8 @@ footer {
   width: 100%;
   text-align: center; }
 
-/*Mobile Styles*/
+/* INDEX */
+/* Mobile Styles */
 @media only screen and (max-width: 425px) {
   .flecha {
     font-size: 60px;
@@ -348,16 +395,143 @@ footer {
   header {
     position: fixed;
     width: 100%;
-    background-color: #6DCAD4; }
+    background-color: #6DCAD4;
+    height: 60px;
+    /* Configuration Parameters */ }
     header .navBar {
       display: none; }
+    header .nombreMobile {
+      position: absolute;
+      display: block;
+      color: black;
+      font-family: "Fira Code", monospace;
+      font-weight: 600;
+      top: 18px;
+      left: 5px;
+      margin-left: 26%;
+      font-size: 21px; }
+    header #hamburger {
+      display: none; }
+    header .menu {
+      display: block;
+      background-color: #6DCAD4;
+      width: 0px;
+      height: 841px;
+      overflow: hidden;
+      padding-top: 50px;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      -ms-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-delay: 0.2s;
+      -moz-transition-delay: 0.2s;
+      -ms-transition-delay: 0.2s;
+      -o-transition-delay: 0.2s;
+      transition-delay: 0.2s; }
+      header .menu ul {
+        list-style: none;
+        padding-left: 30px;
+        padding-top: 25px; }
+        header .menu ul .sobreMiMobile {
+          text-align: left;
+          font-size: 15pt;
+          margin-left: 3px; }
+          header .menu ul .sobreMiMobile a {
+            padding-left: 21px; }
+        header .menu ul .contactoMobile {
+          text-align: left;
+          font-size: 15pt;
+          margin-left: 2px; }
+        header .menu ul li {
+          text-align: left;
+          font-size: 15pt;
+          padding: 12px 0; }
+          header .menu ul li a {
+            padding-left: 20px;
+            font-size: 15px;
+            text-decoration: none;
+            color: black;
+            font-family: "Fira Code", monospace; }
+    header .menuicon {
+      position: absolute;
+      width: 20%;
+      top: 21px;
+      left: 45px;
+      display: block;
+      cursor: pointer;
+      height: 14px;
+      width: 24px; }
+      header .menuicon span {
+        display: block;
+        top: 7px;
+        width: 24px;
+        height: 2px;
+        background-color: #000;
+        position: relative;
+        -webkit-transition-duration: 0;
+        -moz-transition-duration: 0;
+        -ms-transition-duration: 0;
+        -o-transition-duration: 0;
+        transition-duration: 0;
+        -webkit-transition-delay: 0.2s;
+        -moz-transition-delay: 0.2s;
+        -ms-transition-delay: 0.2s;
+        -o-transition-delay: 0.2s;
+        transition-delay: 0.2s; }
+        header .menuicon span::after, header .menuicon span::before {
+          display: block;
+          content: '';
+          position: absolute;
+          width: 24px;
+          height: 2px;
+          background-color: black;
+          -webkit-transition-duration: 0.2s;
+          -moz-transition-duration: 0.2s;
+          -ms-transition-duration: 0.2s;
+          -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+          -webkit-transition-delay: 0.2s, 0;
+          -moz-transition-delay: 0.2s, 0;
+          -ms-transition-delay: 0.2s, 0;
+          -o-transition-delay: 0.2s, 0;
+          transition-delay: 0.2s, 0; }
+        header .menuicon span::before {
+          background-color: black;
+          margin-top: -6px; }
+        header .menuicon span::after {
+          margin-top: 6px; }
+    header #hamburger:checked ~ .menu {
+      width: 75%; }
+    header #hamburger:checked ~ .menuicon span {
+      background-color: rgba(0, 0, 0, 0); }
+      header #hamburger:checked ~ .menuicon span::before, header #hamburger:checked ~ .menuicon span::after {
+        margin-top: 0px;
+        -webkit-transition-delay: 0, 0.2s;
+        -moz-transition-delay: 0, 0.2s;
+        -ms-transition-delay: 0, 0.2s;
+        -o-transition-delay: 0, 0.2s;
+        transition-delay: 0, 0.2s; }
+      header #hamburger:checked ~ .menuicon span::before {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg); }
+      header #hamburger:checked ~ .menuicon span::after {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg); }
   main {
     width: 100%;
     color: white;
-    padding-top: 275px; }
+    padding-top: 240px; }
     main .tituloPrincipal {
+      padding-top: 100px;
       width: 100%;
-      font-size: 50px; }
+      font-size: 40px; }
     main .tituloSecundario {
       width: 100%;
       font-size: 20px;
@@ -386,7 +560,7 @@ footer {
           display: block;
           float: none;
           color: #6DCAD4;
-          font-size: 30px;
+          font-size: 35px;
           margin-bottom: 15px; }
         main .sobreMi .datosMobile .textoMobile {
           float: none;
@@ -406,7 +580,7 @@ footer {
           font-size: 0.7rem; }
     main .habilidades h2 {
       width: 100%;
-      font-size: 30px; }
+      font-size: 35px; }
     main .habilidades ul {
       width: 100%;
       padding-left: 0px;
@@ -424,7 +598,7 @@ footer {
       margin-right: 10%; }
       main .proyectos h2 {
         width: 100%;
-        font-size: 30px; }
+        font-size: 35px; }
       main .proyectos .listaProyectos {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -439,7 +613,7 @@ footer {
           margin-bottom: 50px; }
     main .contacto h2 {
       width: 100%;
-      font-size: 30px; }
+      font-size: 35px; }
     main .contacto h3 {
       width: 100%;
       font-size: 15px;
@@ -482,7 +656,7 @@ footer {
         text-decoration: none;
         color: #040404; } }
 
-/*Tablet Styles*/
+/* Tablet Styles */
 @media only screen and (min-width: 426px) and (max-width: 768px) {
   .flecha {
     font-size: 70px;
@@ -562,7 +736,7 @@ footer {
     main .contacto form textarea {
       width: 95%; } }
 
-/*Laptop Styles*/
+/* Laptop Styles */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .flecha {
     font-size: 80px;
@@ -632,7 +806,7 @@ footer {
     main .contacto form textarea {
       width: 80%; } }
 
-/*Laptop L Styles*/
+/* Laptop L Styles */
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
   .flecha {
     font-size: 80px;
@@ -702,3 +876,197 @@ footer {
       width: 65%; }
     main .contacto form textarea {
       width: 65%; } }
+
+/* PROYECTOS */
+/* Mobile Styles */
+@media only screen and (max-width: 425px) {
+  .flechaProyectos {
+    font-size: 60px;
+    width: 100%; }
+  header {
+    position: fixed;
+    width: 100%; }
+    header .navBarProyectos ul {
+      margin-top: 10px; }
+      header .navBarProyectos ul .nombreProyectos {
+        font-size: 18px;
+        margin-right: 5%;
+        margin-left: 0px; }
+      header .navBarProyectos ul .section1Proyectos {
+        font-size: 18px;
+        margin-right: 8%; }
+  main {
+    padding-top: 150px; }
+    main .logoProyecto {
+      font-size: 65px;
+      padding: 15px 0px 15px 0px;
+      border-radius: 20px;
+      margin-left: 38%;
+      margin-right: 38%;
+      width: 24%; }
+    main .tituloProyecto {
+      font-size: 60px; }
+    main .subtituloProyecto {
+      font-size: 25px; }
+    main .descripcionProyecto {
+      font-size: 15px;
+      margin-left: 20%;
+      margin-right: 20%;
+      width: 60%; }
+    main .sitioWeb {
+      font-size: 15px;
+      width: 200px; }
+    main .informacion div h2 {
+      font-size: 30px; }
+    main .informacion div div {
+      width: 60%; }
+      main .informacion div div i {
+        font-size: 35px; }
+  footer {
+    padding-top: 30%;
+    width: 100%;
+    background-color: #040404;
+    color: white;
+    font-family: "Fira Code", monospace;
+    padding-bottom: 20px; }
+    footer h3 {
+      text-align: center;
+      margin-bottom: 15px; }
+    footer .buttonsContacto {
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
+      footer .buttonsContacto .buttonContacto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #6DCAD4;
+        font-size: 25px;
+        height: 60px;
+        width: 60px;
+        bottom: 20px;
+        left: 10px;
+        border-radius: 50%;
+        text-decoration: none;
+        color: #040404; } }
+
+/* Tablet Styles */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .flechaProyectos {
+    font-size: 70px;
+    width: 96%; }
+  main {
+    padding-top: 150px; }
+    main .logoProyecto {
+      font-size: 60px;
+      padding: 15px 0px 15px 0px;
+      border-radius: 20px;
+      margin-left: 45%;
+      margin-right: 45%;
+      width: 10%; }
+    main .tituloProyecto {
+      font-size: 60px; }
+    main .subtituloProyecto {
+      font-size: 25px; }
+    main .descripcionProyecto {
+      font-size: 15px; }
+    main .sitioWeb {
+      font-size: 15px;
+      width: 200px; }
+    main .informacion div h2 {
+      font-size: 35px; }
+    main .informacion div div {
+      width: 40%; }
+      main .informacion div div i {
+        font-size: 45px; }
+  footer {
+    padding-top: 30%;
+    width: 100%;
+    background-color: #040404;
+    color: white;
+    font-family: "Fira Code", monospace;
+    padding-bottom: 20px; }
+    footer h3 {
+      text-align: center;
+      margin-bottom: 15px; }
+    footer .buttonsContacto {
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
+      footer .buttonsContacto .buttonContacto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #6DCAD4;
+        font-size: 25px;
+        height: 60px;
+        width: 60px;
+        bottom: 20px;
+        left: 10px;
+        border-radius: 50%;
+        text-decoration: none;
+        color: #040404; } }
+
+/* Laptop Styles */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .flechaProyectos {
+    font-size: 80px;
+    width: 100%;
+    text-align: center; }
+  main {
+    padding-top: 150px; }
+    main .logoProyecto {
+      font-size: 60px;
+      padding: 15px 0px 15px 0px; }
+    main .tituloProyecto {
+      font-size: 70px; }
+    main .subtituloProyecto {
+      font-size: 30px; }
+    main .descripcionProyecto {
+      font-size: 15px; }
+    main .sitioWeb {
+      font-size: 18px;
+      width: 220px; }
+    main .informacion div h2 {
+      font-size: 35px; }
+    main .informacion div div {
+      width: 30%; }
+      main .informacion div div i {
+        font-size: 45px; }
+  footer {
+    padding-top: 5%; } }
+
+/* Laptop L Styles */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .flechaProyectos {
+    font-size: 80px;
+    width: 100%;
+    text-align: center; }
+  main {
+    padding-top: 150px; }
+    main .logoProyecto {
+      font-size: 90px;
+      padding: 15px 0px 15px 0px; }
+    main .tituloProyecto {
+      font-size: 80px; }
+    main .subtituloProyecto {
+      font-size: 40px; }
+    main .descripcionProyecto {
+      text-align: center;
+      font-size: 20px; }
+    main .sitioWeb {
+      font-size: 18px; }
+    main .informacion div h2 {
+      font-size: 45px; }
+    main .informacion div div {
+      width: 30%; }
+      main .informacion div div i {
+        font-size: 50px; }
+  footer {
+    padding-top: 5%; } }

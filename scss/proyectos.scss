@@ -1,12 +1,46 @@
-//Proyecto E-commerce Libros
+//Proyectos 
+.flechaProyectos{
+  font-size: 100px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+header{
+  position: fixed;
+  width: 100%;
+  .navBarProyectos{
+    ul{
+      font-family: $fuentePrincipal;
+      background-color: $colorSecundario;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      .nombreProyectos{
+        font-weight: 600;
+        font-size: 25px;
+        margin-left: 2%;
+        margin-right: 39%;
+      }
+      .section1Proyectos{
+        font-size: 25px;
+        margin-right: 10%;
+        a{
+          text-decoration: none;
+          color: $baseColor;
+        }
+      }
+    }
+  }
+}
 main {
-  padding-top: 100px;
   .logoProyecto{
     font-size: 100px;
     display: block;
     text-align: center;
     background-color: $colorSecundario;
-    color: black;
+    color: $baseColor;
     margin-left: 46%;
     margin-right: 46%;
     width: 8%;
@@ -25,24 +59,24 @@ main {
   }
   .subtituloProyecto{
     width: 100%;
-    font-size: 50px;
+    font-size: 45px;
     text-align: center;
     margin-bottom: 30px;
   }
   .descripcionProyecto{
-    text-align: left;
+    text-align: center;
     font-size: 20px;
     margin-left: 30%;
     margin-right: 30%;
     width: 40%;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   .sitioWeb{
     background-color: $colorTerciario;
     border-color: $colorTerciario;
     box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255,144,0,0.6);
     color: $baseColor;
-
+    font-weight: 600;
     font-size: 20px;
     display: block;
     margin-left: auto;
@@ -71,8 +105,8 @@ main {
       margin-right: auto;
       h2{
         text-align: center;
-        font-size: 60px;
-        margin-bottom: 30px;
+        font-size: 45px;
+        margin-bottom: 40px;
       }
       div{
         width: 20%;

@@ -1,11 +1,4 @@
-//Menu Hamburguesa
-$('.menu-burger, .menu-items').on('click', function() {
-  $('.menu-bg, .menu-items, .menu-burger').toggleClass('fs');
-  $('.menu-burger').text() == "☰" ? $('.menu-burger').text('✕') : $('.menu-burger').text('☰');
-});
-
-
-//Formulario boton
+//Formulario botón Enviar
 $( document ).ready(function () {
   $(".buttonEnviar").click(function () {
     Swal.fire({
@@ -22,15 +15,3 @@ $( document ).ready(function () {
     })
   })
 })
-
-//Formulario validación
-
-const formulario = document.getElementById("formulario");
-const inputs = document.querySelectorAll("#formulario input");
-
-
-const expresiones = {
-	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-  asunto: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-}

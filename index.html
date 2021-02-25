@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html style="scroll-behavior: smooth;" lang="en">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,7 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   </head>
-  <body style="background-color: #040404;">
+  <body class="scrollBar">
     <header>
       <nav class="navBar">
         <ul>
@@ -32,12 +32,30 @@
           </li>
         </ul>
       </nav>
-      <nav class="navBarMobile">
-          <div class="nombreMobile">Joaquin Brizuela</div>
-          <div class="burger burger-squeeze">
-            <div class="burger-lines"></div>
-          </div>
-      </nav>
+
+      <h2 class="nombreMobile">Joaquin Brizuela</h2>
+
+      <input type="checkbox" id="hamburger"/>
+      <label class="menuicon" for="hamburger">
+        <span></span>
+      </label>
+      <div class="menu">
+        <ul>
+          <li class="sobreMiMobile">
+            <i class="fas fa-user"></i>
+            <a href="#sobreMiMobile">Sobre mi</a>
+          </li>
+          <li>
+            <i class="fas fa-desktop"></i>
+            <a href="#proyectosMobile">Proyectos</a>
+          </li>
+          <li class="contactoMobile">
+            <i class="fas fa-envelope"></i>
+            <a href="#contactoMobile">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
     </header>
 
     <main>
@@ -54,7 +72,7 @@
           </p>
         </div>
 
-        <div class="datosMobile">
+        <div id="sobreMiMobile" class="datosMobile">
           <img class="miFotoMobile" src="img/miFoto.jpg" alt="miFoto">
           <h2 id="sobreMiMobile">Sobre mí</h2>
           <p class="textoMobile">
@@ -103,7 +121,7 @@
 
       <i class="flecha fas fa-angle-down"></i>
 
-      <section class="proyectos">
+      <section id="proyectosMobile" class="proyectos">
         <h2 id="proyectos">Proyectos</h2>
         <ul class="listaProyectos">
           <li class="proyecto">
@@ -124,7 +142,7 @@
 
       <i class="flecha fas fa-angle-down"></i>
       
-      <section class="contacto">
+      <section id="contactoMobile" class="contacto">
         <h2 id="contacto">Contáctame</h2>
         <h3>¡Completa tus datos para mantenernos en contacto!</h3>
 
@@ -164,6 +182,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Icons -->
     <script src="https://kit.fontawesome.com/9ed8b2ceb1.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="js/typed.js"></script>
