@@ -146,13 +146,13 @@
         <h2 id="contacto">Contáctame</h2>
         <h3>¡Completa tus datos para mantenernos en contacto!</h3>
 
-        <form>
+        <form action="enviarCorreo.php" method="POST">
             <input type="text" name="nombre" required="required" placeholder="Nombre">
             <input type="email" name="email" required="required" placeholder="Correo electrónico">
             <input type="text" name="asunto" required="required" placeholder="Asunto">
             <textarea name="mensaje" rows="10" required="required" placeholder="Mensaje"></textarea>
 
-            <button class="buttonEnviar btn btn-primary">Enviar</button>
+            <button class="buttonEnviar btn btn-primary" type="submit">Enviar</button>
         </form>
       </section>
     </main>
