@@ -146,13 +146,13 @@
         <h2 id="contacto">Contáctame</h2>
         <h3>¡Completa tus datos para mantenernos en contacto!</h3>
 
-        <form id="formulario" action="mailto:joaquinbriz1@gmail.com" method="post" enctype="text/plain">
-            <input id="grupo__nombre" type="text" name="nombre" placeholder="Nombre">
-            <input id="grupo__email" type="email" name="email" placeholder="Correo electrónico">
-            <input id="grupo__asunto" type="text" name="asunto" placeholder="Asunto">
-            <textarea id="grupo__mensaje" name="mensaje" rows="10" placeholder="Mensaje"></textarea>
+        <form>
+            <input type="text" name="nombre" required="required" placeholder="Nombre">
+            <input type="email" name="email" required="required" placeholder="Correo electrónico">
+            <input type="text" name="asunto" required="required" placeholder="Asunto">
+            <textarea name="mensaje" rows="10" required="required" placeholder="Mensaje"></textarea>
 
-            <button class="buttonEnviar btn btn-primary" type="submit">Enviar</button>
+            <button class="buttonEnviar btn btn-primary">Enviar</button>
         </form>
       </section>
     </main>
@@ -163,7 +163,10 @@
         <a class="buttonContacto" href="https://www.linkedin.com/in/joaquin-brizuela/">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a class="buttonContacto" href="mailto:joaquinbriz1@gmail.com">
+        <a class="buttonContacto" href="https://github.com/JoacoBriz">
+          <i class="fab fa-github"></i>
+        </a>
+        <a class="buttonContacto" href="">
           <i class="fas fa-envelope"></i>
         </a>
       </section>
