@@ -1,18 +1,26 @@
 $( document ).ready(function () {
   //Formulario botón Enviar
-  $(".buttonEnviar").click(function () {
-    Swal.fire({
-      icon: "success",
-      html: `<p class="alertTexto">¡Listo! Mensaje enviado</p> <p class="alertTexto">Estaremos en contacto en poco tiempo :) </p>`,
-      confirmButtonText: "Volver",
-      timer: 5000,
-      timerProgressBar: true,
-      allowOutsideClick: true,
-      customClass:{
-        container: "alertButtonEnviar",
-        confirmButton: "buttonVolver"
-      }
-    })
+  $("#formContacto").submit(function () {
+    let nombre = $("#nombre").value;
+    let correo = $("#email").value;
+    let asunto = $("#asunto").value;
+    let mensaje = $("#mensaje").value;
+    if (nombre == "" || correo == "" || asunto == "" || mensaje == "") {
+        return false;
+    } else {
+      Swal.fire({
+        icon: "success",
+        html: `<p class="alertTexto">¡Listo! Mensaje enviado</p> <p class="alertTexto">Estaremos en contacto en poco tiempo :) </p>`,
+        confirmButtonText: "Volver",
+        timer: 5000,
+        timerProgressBar: true,
+        allowOutsideClick: true,
+        customClass:{
+          container: "alertButtonEnviar",
+          confirmButton: "buttonVolver"
+        }
+      })
+    }
   });
 
 
