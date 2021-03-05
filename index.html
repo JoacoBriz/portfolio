@@ -123,21 +123,21 @@
 
       <section id="proyectosMobile" class="proyectos">
         <h2 id="proyectos">Proyectos</h2>
-        <ul class="listaProyectos">
-          <li class="proyecto">
+        <div class="listaProyectos">
+          <div class="proyecto">
             <a href="html/proyectoLibro.html">
               <img src="img/proyectoLibro.png" alt="">
             </a>
-          </li>
-          <li class="proyecto">
+          </div>
+          <div class="proyecto">
             <a href="html/proyectoMenu.html">
               <img src="img/proyectoMenu.png" alt="">
             </a>
-          </li>
+          </div>
           <!-- <li class="proyecto">
             <img src="" alt="">
           </li> -->
-        </ul>
+        </div>
       </section>
 
       <i class="flecha fas fa-angle-down"></i>
@@ -146,19 +146,19 @@
         <h2 id="contacto">Contáctame</h2>
         <h3>¡Completa tus datos para mantenernos en contacto!</h3>
 
-        <form action="enviarCorreo.php" method="POST">
+        <form action="https://formspree.io/f/mknplaqb" method="POST">
             <input type="text" name="nombre" required="required" placeholder="Nombre">
             <input type="email" name="email" required="required" placeholder="Correo electrónico">
             <input type="text" name="asunto" required="required" placeholder="Asunto">
             <textarea name="mensaje" rows="10" required="required" placeholder="Mensaje"></textarea>
 
-            <button class="buttonEnviar btn btn-primary" type="submit">Enviar</button>
+            <input class="buttonEnviar btn btn-primary" type="submit" value="Enviar"></input>
         </form>
       </section>
     </main>
 
     <footer>
-      <h3>Ecuentrame en: </h3>
+      <h3>Encuentrame en: </h3>
       <section class="buttonsContacto">
         <a class="buttonContacto" href="https://www.linkedin.com/in/joaquin-brizuela/">
           <i class="fab fa-linkedin"></i>
@@ -166,9 +166,7 @@
         <a class="buttonContacto" href="https://github.com/JoacoBriz">
           <i class="fab fa-github"></i>
         </a>
-        <a class="buttonContacto" href="">
-          <i class="fas fa-envelope"></i>
-        </a>
+        
       </section>
     </footer>
 
