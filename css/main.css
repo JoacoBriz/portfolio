@@ -325,7 +325,7 @@ main {
         border-style: solid;
         border-color: #EE82EE;
         box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(255, 144, 0, 0.6);
-        width: 90%;
+        width: 65%;
         padding-top: 25px;
         padding-bottom: 25px;
         outline: 0 none; }
@@ -621,12 +621,14 @@ footer {
       font-size: 15px;
       margin-bottom: 35px; }
     main .contacto form input {
-      width: 95%; }
+      width: 90%; }
     main .contacto form textarea {
-      width: 95%; }
+      width: 90%; }
     main .contacto form .buttonEnviar {
       font-size: 18px;
       width: 60%; }
+    main .contacto form textarea:focus, main .contacto form input:focus, main .contacto form input[type]:focus {
+      width: 105%; }
   footer {
     padding-top: 30%;
     width: 100%;
@@ -735,7 +737,9 @@ footer {
   main .contacto form input {
     width: 95%; }
   main .contacto form textarea {
-    width: 95%; } }
+    width: 95%; }
+  main .contacto form textarea:focus, main .contacto form input:focus, main .contacto form input[type]:focus {
+    width: 105%; } }
 
 /* Laptop Styles */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -804,7 +808,9 @@ footer {
   main .contacto form input {
     width: 80%; }
   main .contacto form textarea {
-    width: 80%; } }
+    width: 80%; }
+  main .contacto form textarea:focus, main .contacto form input:focus, main .contacto form input[type]:focus {
+    width: 90%; } }
 
 /* Laptop L Styles */
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -874,7 +880,9 @@ footer {
   main .contacto form input {
     width: 65%; }
   main .contacto form textarea {
-    width: 65%; } }
+    width: 65%; }
+  main .contacto form textarea:focus, main .contacto form input:focus, main .contacto form input[type]:focus {
+    width: 75%; } }
 
 /* PROYECTOS */
 /* Mobile Styles */

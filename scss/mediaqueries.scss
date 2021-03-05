@@ -307,15 +307,19 @@
       }
       form{
         input{
-          width: 95%;
+          width: 90%;
         }
         textarea{
-          width: 95%;
+          width: 90%;
         }
         .buttonEnviar{
           font-size: 18px;
           width: 60%;
         }
+
+        textarea:focus, input:focus, input[type]:focus {
+          width: 105%;
+      }
       }
 
     }
@@ -485,6 +489,10 @@
         textarea{
           width: 95%;
         }
+
+        textarea:focus, input:focus, input[type]:focus {
+          width: 105%;
+      }
       }
     }
   }
@@ -610,6 +618,10 @@
         textarea{
           width: 80%;
         }
+
+        textarea:focus, input:focus, input[type]:focus {
+          width: 90%;
+      }
       }
     }
   }
@@ -736,6 +748,10 @@
         textarea{
           width: 65%;
         }
+
+        textarea:focus, input:focus, input[type]:focus {
+          width: 75%;
+      }
       }
     }
   }

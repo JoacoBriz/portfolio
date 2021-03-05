@@ -1,5 +1,5 @@
-//Formulario botón Enviar
 $( document ).ready(function () {
+  //Formulario botón Enviar
   $(".buttonEnviar").click(function () {
     Swal.fire({
       icon: "success",
@@ -13,5 +13,26 @@ $( document ).ready(function () {
         confirmButton: "buttonVolver"
       }
     })
-  })
-})
+  });
+
+
+  //Formulario Validación
+  $("input#nombre").keypress(function () {
+    var regex = new RegExp("^[a-zA-Z ]+$");
+    var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+    if (!regex.test(key) || this.value.length === 25) {
+      event.preventDefault();
+      return false;
+    }
+  });
+  $("#asunto").keypress(function () {
+    asunto=$('#asunto').val();
+    if (asunto.length<15){
+      return true;
+    }
+    else {
+      return false;
+      
+    }
+  });
+});
