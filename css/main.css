@@ -409,14 +409,14 @@ footer {
       top: 18px;
       left: 5px;
       margin-left: 26%;
-      font-size: 21px; }
+      font-size: 22px; }
     header #hamburger {
       display: none; }
     header .menu {
       display: block;
       background-color: #6DCAD4;
       width: 0px;
-      height: 841px;
+      height: 871px;
       overflow: hidden;
       padding-top: 50px;
       -webkit-transition-duration: 0.2s;
@@ -431,13 +431,14 @@ footer {
       transition-delay: 0.2s; }
       header .menu ul {
         list-style: none;
-        padding-left: 30px;
+        padding-left: 44px;
         padding-top: 25px; }
         header .menu ul .sobreMiMobile {
           text-align: left;
           font-size: 15pt;
           margin-left: 3px; }
           header .menu ul .sobreMiMobile a {
+            font-size: 19px;
             padding-left: 21px; }
         header .menu ul .contactoMobile {
           text-align: left;
@@ -449,7 +450,7 @@ footer {
           padding: 12px 0; }
           header .menu ul li a {
             padding-left: 20px;
-            font-size: 15px;
+            font-size: 19px;
             text-decoration: none;
             color: black;
             font-family: "Fira Code", monospace; }
@@ -502,7 +503,7 @@ footer {
         header .menuicon span::after {
           margin-top: 6px; }
     header #hamburger:checked ~ .menu {
-      width: 75%; }
+      width: 77%; }
     header #hamburger:checked ~ .menuicon span {
       background-color: rgba(0, 0, 0, 0); }
       header #hamburger:checked ~ .menuicon span::before, header #hamburger:checked ~ .menuicon span::after {
@@ -529,15 +530,16 @@ footer {
     color: white;
     padding-top: 240px; }
     main .tituloPrincipal {
-      padding-top: 100px;
+      padding-left: 15px;
+      padding-top: 80px;
       width: 100%;
-      font-size: 40px; }
+      font-size: 50px; }
     main .tituloSecundario {
       width: 100%;
       font-size: 20px;
       padding-bottom: 100px; }
     main .sobreMi {
-      padding-top: 150px;
+      padding-top: 90px;
       display: block;
       width: 70%;
       margin-left: 15%;
